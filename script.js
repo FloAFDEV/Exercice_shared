@@ -1,3 +1,4 @@
+console.log(gsap)
 const card = document.querySelectorAll(".card")
 
 card.forEach( el => {
@@ -19,7 +20,10 @@ card.forEach( el => {
 	})
 	
 	el.addEventListener("mouseleave", () => {
-		el.children[0].style.transform = "rotateX(0) rotateY(0)"
-		el.children[1].style.transform = "rotateX(0) rotateY(0)"
+
+		gsap.to(el.children[0], {rotateX: 0, rotateY: 0, duration: 1})
+		gsap.to(el.children[1], {rotateX: 0, rotateY: 0, duration: 1})
+		// el.children[0].style.transform = "rotateX(0) rotateY(0)"
+		// el.children[1].style.transform = "rotateX(0) rotateY(0)"
 	})
 })
