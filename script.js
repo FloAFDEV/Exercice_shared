@@ -4,8 +4,8 @@ const glow = document.querySelectorAll(".glow")
 
 window.addEventListener('load', () => {
 gsap.to(card, {opacity: 1, top: 0, left: 0, rotation:360, ease:Linear.easeNone,duration: 1})
-gsap.to(contentCard,{opacity: 1, top: 0, left: 0,rotation:360, ease:Linear.easeNone,duration: 1})
-gsap.to(glow, {opacity: 1, top: 0, left: 0,rotation:360, ease:Linear.easeNone,duration: 1})
+gsap.to(contentCard,{opacity: 1, top: 0, left: 0,rotation: 1080, ease:Linear.easeNone,duration: 1})
+gsap.to(glow, {opacity: 1, top: 0, left: 0,rotation: 720, ease:Linear.easeNone,duration: 1})
 })
 
 
